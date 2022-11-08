@@ -1,1 +1,3 @@
 # Medicine-Shop
+
+![](Preview.png)
