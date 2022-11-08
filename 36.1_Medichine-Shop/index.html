@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/icon type" href="static/2_fab-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- external css -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- google jaquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- external js -->
+    <script src="index.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+
+    <title>Medicine Shop</title>
+</head>
+
+
+
+<body>
+
+     <!--========================= cursor =========================-->
+     <div class="cursor d-none d-md-none d-lg-block"></div>  
+     <div class="cursor2 d-none d-md-none d-lg-block"></div>  
+     <!-- ============ end ============-->
+
+
+
+
+    <!--========================= home section =========================-->
+    <section class="container-fluid home_section">
+
+        <!--========== navbar ==========-->
+        <nav class="navbar navbar-expand-lg navbar-light p-4 fixed-top">
+            <div class="container-fluid">
+
+                <!-- logo -->
+                <a class="navbar-brand" href="#"><img src="static/0_Logo.png"></a>
+
+
+                <!-- manu -->
+                <button class="manu_btn navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="nav_manu_bar_icon"><i class="bi bi-list"></i></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-1">
+                            <a class="nav-link active lightgray" aria-current="page" href="#">Medicne</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">OTC Drugs</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">Prescription</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">Health</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">Service</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#!" data-bs-toggle="modal" data-bs-target="#ContactUpModal">Contact</a>
+                        </li>
+
+                        <!-- search -->
+                        <li class="nav-item px-2">
+                            <div class="dropdown">
+                                <a class="nav-link lightgray dropbtn" href="#!"><i class="bi bi-search"></i></a>
+                                <div class="dropdown_content">
+                                    <form action="!#" class="d-flex">
+                                        <input type="search" class="search_bar px-2" placeholder="search">
+                                        <a class="nav-link lightgray border search_btn px-2" href="!#">search</a>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <!-- login logout singup-->
+                        <li class="nav-item px-3 mx-1 login_background login_btn_container mt-2 mt-md-2 mt-lg-0"
+                            data-bs-toggle="modal" data-bs-target="#LoginModal">
+                            <a class="nav-link" href="#!">Log in</a>
+                        </li>
+                        <li class="nav-item px-3 login_background login_btn_container mt-2 mt-md-2 mt-lg-0 mx-1" data-bs-toggle="modal" data-bs-target="#SingUpModal">
+                            <a class="nav-link" href="#!">Sing Up</a>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+        </nav>
+
+
+        <!--Login Modal -->
+        <div class="modal fade motserrat_font" id="LoginModal" tabindex="-1" aria-labelledby="LoginModal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal_header ">
+                        <h5 class="modal-title" id="LoginModal">Login</h5>
+                        <button type="button" class="modal_close_btn" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="far fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#!">
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label modal_input_label">Email:</label>
+                                <input type="email" class="form-control modal_input" id="email"
+                                    placeholder="Enter email" name="email">
+                            </div>
+                            <div class="mb-3 modal_input">
+                                <label for="pwd" class="form-label modal_input_label">Password:</label>
+                                <input type="password" class="form-control modal_input" id="pwd"
+                                    placeholder="Enter password" name="pswd">
+                            </div>
+                            <button type="submit" class="modal_submit_btn btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sing Up Modal -->
+        <div class="modal fade motserrat_font" id="SingUpModal" tabindex="-1" aria-labelledby="SingUpModal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal_header ">
+                        <h5 class="modal-title" id="SingUpModal">Sing Up</h5>
+                        <button type="button" class="modal_close_btn" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="far fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#!">
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label modal_input_label">Email:</label>
+                                <input type="email" class="form-control modal_input" id="email"
+                                    placeholder="Enter email" name="email">
+                            </div>
+                            <div class="mb-3 modal_input">
+                                <label for="pwd" class="form-label modal_input_label">Password:</label>
+                                <input type="password" class="form-control modal_input" id="pwd"
+                                    placeholder="Enter password" name="pswd">
+                            </div>
+                            <button type="submit" class="modal_submit_btn btn">Create</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact Modal -->
+        <div class="modal fade motserrat_font" id="ContactUpModal" tabindex="-1" aria-labelledby="ContactUpModal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal_header ">
+                        <h5 class="modal-title" id="ContactUpModal">Contact Me</h5>
+                        <button type="button" class="modal_close_btn" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="far fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#!">
+
+                            <div class="mb-3 mt-3">
+                                <label for="fullName" class="form-label modal_input_label">Full Name:</label>
+                                <input type="text" class="form-control modal_input" id="email"
+                                    placeholder="Full Name" name="fullName">
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label modal_input_label">Email:</label>
+                                <input type="email" class="form-control modal_input" id="email"
+                                    placeholder="Enter email" name="email">
+                            </div>
+
+                            
+                            <div class="mb-3 modal_input">
+                                <label for="message" class="form-label modal_input_label">Password:</label>
+                                <textarea rows="4" placeholder="Write Message..." class="form-control modal_input"placeholder="Write Message..." id="message" name="message"></textarea>
+
+
+
+ 
+                            </div>
+                            <button type="submit" class="modal_submit_btn btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--========== body ==========-->
+
+        <div class="title_container row d-flex justify-content-center">
+            <div class="col-11 col-md-11 col-lg-6 col-xxl-4">
+                <h1 class="text-center home_title ">
+                    We are always ready to Delivery your Emergency <span class="medicine_single_span">Medicine</span>
+                </h1>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ============ end ============-->
+
+
+
+    <!--========================= prescription section =========================-->
+    <section class="container-fluid">
+        <div class="row d-flex justify-content-center ">
+
+
+
+            <div
+                class="drag_androp_file_container col-9 col-md-6 col-lg-4 card text-center drag_androp_file_container justify-content-center p-5">
+
+                <div class="justify-content-center d-flex">
+                    <div class="icon prescription_upload_icon_first_layer">
+                        <i class="bi bi-cloud-upload prescription_upload_icon"></i>
+                    </div>
+                </div>
+
+                <div class="justify-content-center d-flex">
+                    <h6 class="drag_nd_drop_title mt-3 col-12 col-md-12 col-xxl-6 text-center motserrat_font">Drag and
+                        drop The Doctor Prescription</h6>
+                </div>
+
+                <small class="motserrat_font">or</small>
+
+
+                <div class="justify-content-center d-flex">
+                    <button class="drag_and_drop_browse_file_btn motserrat_font py-2 px-4 mt-2 d-block">Browse
+                        File</button>
+                </div>
+
+                <form action="#!">
+                    <input class="drag_and_drop_brows_file_input" type="file" hidden>
+                </form>
+
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <!-- ============ end ============-->
+
+
+    <!--========================= support, return, payment, secure  =========================-->
+    <section class="container-fluid support_and_product_section mb-5">
+
+        <div class="row d-flex justify-content-center mb-5 px-3 support_return_payment_secure_container">
+
+            <!-- first card -->
+            <div
+                class="col-10 col-md-4 col-lg-3 col-xxl-2 d-flex justify-content-center support_return_payment_secure_card py-3 mx-1 my-1">
+                <div class="support_return_payment_secure_icon_container col-6">
+                    <div class=""><i class="fas fa-user-headset "></i></div>
+                </div>
+
+
+                <div class="support_return_payment_secure_title_container mx-4 motserrat_font col-6">
+                    <h6>Support 24/7</h6>
+                </div>
+            </div>
+
+
+            <!-- second card -->
+            <div
+                class="col-10 col-md-4 col-lg-3 col-xxl-2 d-flex justify-content-center support_return_payment_secure_card py-3 mx-1 my-1">
+                <div class="support_return_payment_secure_icon_container col-6">
+                    <div class=""><i class="far fa-exchange-alt"></i></div>
+                </div>
+
+
+                <div class="support_return_payment_secure_title_container mx-4 motserrat_font col-6">
+                    <h6>Return</h6>
+                </div>
+            </div>
+
+
+            <!-- third card -->
+            <div
+                class="col-10 col-md-4 col-lg-3 col-xxl-2 d-flex justify-content-center support_return_payment_secure_card py-3 mx-1 my-1">
+                <div class="support_return_payment_secure_icon_container col-6">
+                    <div class=""><i class="far fa-money-check-edit-alt"></i></div>
+                </div>
+
+
+                <div class="support_return_payment_secure_title_container mx-4 motserrat_font col-6">
+                    <h6>Payment Secure</h6>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--------- most product -------->
+        <div class="container px-4 px-lg-5">
+
+            <!-- title -->
+            <div class="d-flex row">
+                <div class="col-8 col-md-10 col-lg-10">
+                    <h2 class="text-start product_section_title motserrat_font">Most needed for Covid-19</h2>
+                </div>
+                <div class="col-4 col-md-2 col-lg-2"><a href="all_products.html"
+                        class="text-end motserrat_font product_view_all">View
+                        all</a></div>
+            </div>
+
+
+            <!-- slider -->
+            <div class="swiper productSwiper my-5">
+                <div class="swiper-wrapper col-6 col-md-5 col-lg-3">
+
+
+                    <!-- 1st -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/2.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 2nd -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/1.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 3rd -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 4th -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/4.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 5th -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/5.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 6th -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/6.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--------- Always used product -------->
+        <div class="container px-4 px-lg-5">
+
+            <!-- title -->
+            <div class="d-flex row">
+                <div class="col-8 col-md-10 col-lg-10">
+                    <h2 class="text-start product_section_title motserrat_font">Always used</h2>
+                </div>
+                <div class="col-4 col-md-2 col-lg-2"><a href="all_products.html"
+                        class="text-end motserrat_font product_view_all">View
+                        all</a></div>
+            </div>
+
+
+            <!-- slider -->
+            <div class="swiper productSwiper my-5">
+                <div class="swiper-wrapper col-6 col-md-5 col-lg-3">
+
+
+                    <!-- 1st -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/1.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 2nd -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/2.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 3rd -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 4th -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/4.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 5th -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/5.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 6th -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/6.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--------- Thank you medical workers -------->
+        <div class="pt-4 pt-lg-5 container">
+            <div class="row justify-content-center">
+
+                <div class="col-10 col-md-10 col-lg-7">
+                    <div class="d-flext justify-content-center">
+                        <img src="static/3_Medical-Workers.png" class="medical_workers_img" alt="medical workers">
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <div class="medical_workers_container ">
+                        <div class="p-4">
+                            <h1 class="workers_section_heading motserrat_font">Thank You all <span
+                                    class="medical_workers_span">medical workers</span></h1>
+                            <p class="motserrat_font">As COVID-19 continues to impact communities around the world,
+                                people are coming together to</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- ============ end ============ -->
+
+
+    <!--========================= video ==========================-->
+    <section class="container d-flex justify-content-center py-1 py-md-5 py-lg-5">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1RkseDeYS9g" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+    <!-- ============ end ============ -->
+
+
+
+    <!--========================= other medicine information section ==========================-->
+    <section class="coontainer py-5 other_medicine_info">
+        <!--------- most product -------->
+        <div class="container px-4 px-lg-5">
+
+            <!-- title -->
+            <div class="d-flex row">
+                <div class="col-8 col-md-10 col-lg-10">
+                    <h2 class="text-start product_section_title motserrat_font">Other Medicine Information</h2>
+                </div>
+                <div class="col-4 col-md-2 col-lg-2"><a href="all_products.html"
+                        class="text-end motserrat_font product_view_all">View
+                        all</a></div>
+            </div>
+
+
+            <!-- slider -->
+            <div class="swiper OtherMedicineInfoSwiper my-5">
+                <div class="swiper-wrapper col-6 col-md-5 col-lg-3">
+
+
+                    <!-- 1st -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/7.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 2nd -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/8.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 3rd -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/9.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 4th -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/1.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 5th -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 6th -->
+                    <div class="swiper-slide card product_card" style="width: 18rem;">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="static/1_medicine/7.jpg" class="card-img-top product_img d-block py-3"
+                                alt="product image 1">
+                        </div>
+
+                        <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                            <div class="col-6">
+                                <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                                <p class="product_price motserrat_font">$0.9 <small
+                                        class="product_qty motserrat_font">Per Pic</small></p>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <div class="product_plus_icon_container">
+                                    <div><i class="bi bi-plus product_plus_icon"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ end ============ -->
+
+
+    <!--========================= blog section =========================-->
+    <section class="container-fluid blog_section py-5">
+
+
+        <!-- blog first part -->
+        <div class="row justify-content-center">
+
+            <div class="card col-10 col-md-10 col-lg-4 col-xl-4 col-xxl-4 mx-2 my-2 blod_card blod_card_bg_img p-4">
+                <div class="card-body">
+                    <h4 class="card-text col-8 motserrat_font blog_title mb-4">How to protect you for corona virus</h4>
+                    <a href="#!" class="px-3 py-2 blog_read_this_btn motserrat_font">Read This</a>
+                </div>
+            </div>
+            <div class="card col-10 col-md-10 col-lg-4 col-xl-4 col-xxl-4 mx-2 my-2 blod_card blod_card_bg_img p-4">
+                <div class="card-body">
+                    <h4 class="card-text col-8 motserrat_font blog_title mb-4">How to protect you for corona virus</h4>
+                    <a href="#!" class="px-3 py-2 blog_read_this_btn motserrat_font">Read This</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- blog second part -->
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-5 col-lg-2 col-xl-2 col-xxl-2 mx-2 my-2">
+                <div class="card border_none bg_none">
+                    <img src="static/2_blogs/p-1.jpg" class="card-img-top blog_img" alt="...">
+                    <div class="card-body">
+                        <a href="#!" class="card-text motserrat_font second_card_title text-start">How to protect you
+                            for corona virus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-5 col-lg-2 col-xl-2 col-xxl-2 mx-2 my-2">
+                <div class="card border_none bg_none">
+                    <img src="static/2_blogs/p-2.jpg" class="card-img-top blog_img" alt="...">
+                    <div class="card-body">
+                        <a href="#!" class="card-text motserrat_font second_card_title text-start">How to protect you
+                            for corona virus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-5 col-lg-2 col-xl-2 col-xxl-2 mx-2 my-2">
+                <div class="card border_none bg_none">
+                    <img src="static/2_blogs/p-3.jpg" class="card-img-top blog_img" alt="...">
+                    <div class="card-body">
+                        <a href="#!" class="card-text motserrat_font second_card_title text-start">How to protect you
+                            for corona virus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-5 col-lg-2 col-xl-2 col-xxl-2 mx-2 my-2">
+                <div class="card border_none bg_none">
+                    <img src="static/2_blogs/p-4.jpg" class="card-img-top blog_img" alt="...">
+                    <div class="card-body">
+                        <a href="#!" class="card-text motserrat_font second_card_title text-start">How to protect you
+                            for corona virus</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="text-center my-4">
+            <a href="#!" class="blog_seemore_btn motserrat_font px-5 py-3">See More</a>
+        </div>
+
+    </section>
+    <!-- ============ end ============ -->
+
+
+
+    <!--========================= footer =========================-->
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+
+                <!-- contact -->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 footer_container">
+                    <img src="static/0.1_footer_logo.png" class="footer_about_img my-5" alt="logo">
+                    <div class="contact_info motserrat_font">
+                        <div>Call: +** ** **</div>
+                        <div>Mail: ***@gmail.com</div>
+                        <div>Location: Dhaka, Bangladesh</div>
+                    </div>
+                </div>
+
+                <!-- categories  -->
+                <div class="col-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2 footer_container">
+                    <h4 class="footer_each_card_title motserrat_font my-5">Main Categories</h4>
+                    <div class="footer_link_container motserrat_font">
+                        <div><a href="#!">Medicine</a></div>
+                        <div><a href="#!">For Corona</a></div>
+                        <div><a href="#!">OTC Drugs</a></div>
+                        <div><a href="#!">Prescription</a></div>
+                        <div><a href="#!">Health</a></div>
+                    </div>
+                </div>
+
+                <!-- About  -->
+                <div class="col-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2 footer_container">
+                    <h4 class="footer_each_card_title motserrat_font my-5">About</h4>
+                    <div class="footer_link_container motserrat_font">
+                        <div><a href="#!">Who we are</a></div>
+                        <div><a href="#!">Terms ofuse</a></div>
+                        <div><a href="#!">Service</a></div>
+                        <div><a href="#!">Privacy Policy</a></div>
+                        <div><a href="#!">Contact</a></div>
+                    </div>
+                </div>
+
+
+
+                <!-- About  -->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 footer_container">
+                    <h4 class="footer_each_card_title motserrat_font my-5">Medicine</h4>
+                    <div class="footer_link_container motserrat_font">
+                        <p class="about">
+                            Subscribe to our newsletter and we will infor you about news directory and promotions
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text-center motserrat_font developed_by">Developed by <b>MOSSADDAK</b></div>
+        </div>
+    </footer>
+    <!-- ============ end ============ -->
+
+
+
+
+
+
+
+
+
+
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+
+    <!-- drag and drop -->
+    <script src="drag_and_drop.js"></script>
+
+
+    <!-- google jaquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- cursor -->
+    <script src="cursor.js"></script>
+
+
+
+
+</body>
+
+</html>

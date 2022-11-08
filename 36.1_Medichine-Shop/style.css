@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,400;0,500;0,900;1,400;1,500;1,900&display=swap');
+
+.motserrat_font {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.lightgray {
+    color: #d3d3d3 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.border_none {
+    border: none !important;
+}
+
+.bg_none {
+    background-color: transparent !important;
+}
+
+/*======================= cursor ==================*/
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #0AD8C7;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    animation: cursorAnim1 .5s infinite alternate;
+    z-index: 2000;
+}
+
+.cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: gainsboro;
+    border: 1px solid #008F84;
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    animation: CursorAnim2 .5s infinite alternate;
+    z-index: 2000;
+}
+
+@keyframes cursorAnim1 {
+    from {
+        width: 40px;
+        height: 40px;
+    }
+
+    to {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@keyframes CursorAnim2 {
+    from {
+        width: 10px;
+        height: 10px;
+    }
+
+    to {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        width: 30px;
+        height: 30px;
+    }
+
+    50% {
+        width: 50px;
+        height: 50px;
+    }
+
+    100% {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid #008f84;
+}
+
+
+/*========================= home section ==========================*/
+.home_section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #0AD8C7), url(static/1_home-banner.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    transition: .9s;
+    background-color: transparent;
+}
+
+.nav_bg {
+    transition: 0.9s;
+    background-color: #008f84 !important;
+}
+
+.navbar-brand img {
+    width: 23vh;
+}
+
+.nav-link {
+    font-weight: 700;
+    font-size: 15px;
+    transition: .9s;
+}
+
+.nav-link:hover {
+    color: rgb(250, 248, 248) !important;
+}
+
+.nav_manu_bar_icon {
+    color: #d3d3d3;
+    font-size: 30px !important;
+}
+
+.manu_btn {
+    border: none !important;
+    background-color: transparent;
+    transition: 0.9s;
+}
+
+.manu_btn:focus {
+    color: white !important;
+    font-size: 31px;
+    transition: 0.9s;
+}
+
+.manu_btn:hover {
+    color: white !important;
+    font-size: 31px;
+}
+
+.home_left img,
+.home_right img {
+    width: 100%;
+}
+
+.login_background {
+    background-color: #0AD8C7 !important;
+    border-radius: 3px;
+}
+
+.search_bar {
+    outline: none;
+    border: 1px solid #008f84;
+}
+
+.dropdown_content a {
+    display: block;
+    color: black;
+}
+
+.dropdown_content {
+    display: none;
+    margin-left: -220px;
+    position: absolute;
+}
+
+/* .dropdown:hover .dropdown_content{
+    display:block;
+} */
+
+.dropdown {
+    position: relative;
+}
+
+.scrolled {
+    color: black !important;
+}
+
+.search_btn {
+    transition: 0.9s;
+    border: 1px solid #008f84;
+}
+
+.search_btn:hover {
+    background-color: white;
+    color: black !important;
+    border: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .dropdown_content {
+        margin-left: 25px;
+        display: block;
+        transform: translateY(-40px);
+    }
+
+    .search_bar {
+        outline: none !important;
+    }
+}
+
+.home_title {
+    margin-top: 35vh;
+    font-weight: bolder;
+    font-size: 45px;
+    color: lightgray;
+}
+
+@media screen and (max-width: 991px) {
+    .home_title {
+        font-size: 40px;
+    }
+}
+
+.medicine_single_span {
+    color: black;
+    background: linear-gradient(to bottom, transparent 60%, #00F8E4 50%);
+}
+
+
+/*========================= prescription section ==========================*/
+
+.drag_androp_file_container {
+    background-color: #E1FDFF;
+    border-width: 4px 4px 12px 4px;
+    border-color: #008F84 !important;
+    border-radius: 20px;
+    transform: translateY(-180px);
+}
+
+.drag_androp_file_container.active {
+    border: 3px solid rgb(49, 168, 12);
+}
+
+.prescription_upload_icon_first_layer {
+    background-color: #91F6F0;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.prescription_upload_icon {
+    font-size: 3rem;
+}
+
+.drag_nd_drop_title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.drag_and_drop_browse_file_btn {
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #008F84;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.drag_androp_file_container img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.PrescriptionsubmitBTN {
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #008F84;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: 0.9s;
+}
+
+.PrescriptionsubmitBTN:hover {
+    color: #008F84;
+    background-color: white;
+}
+
+
+
+/*========================= support, return, payment, secure section ==========================*/
+.support_return_payment_secure_container {
+    transform: translateY(-60px);
+}
+
+.support_return_payment_secure_card {
+    background-color: #E1FDFF;
+    border-width: 2px 2px 6px 2px;
+    border-color: #008F84 !important;
+    border-radius: 10px;
+    border-style: solid;
+    transition: 0.9s;
+}
+
+.support_return_payment_secure_card:hover {
+    background-color: #0AD8C7;
+}
+
+.support_return_payment_secure_icon_container {
+    height: 4rem;
+    width: 4rem;
+    background-color: #ABFFF8;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.9s;
+}
+
+.support_return_payment_secure_card:hover .support_return_payment_secure_icon_container {
+    background-color: #E1FDFF;
+}
+
+.support_return_payment_secure_title_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support_return_payment_secure_title_container h6 {
+    font-weight: 600;
+}
+
+.support_and_product_section {
+    background-color: #F3FFFD;
+}
+
+.product_section_title {
+    font-weight: 700;
+}
+
+.product_view_all {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    background: linear-gradient(to bottom, transparent 50%, #00F8E4 50%);
+    transition: 0.9s;
+}
+
+.product_view_all:hover {
+    background: linear-gradient(to bottom, transparent 20%, #00F8E4 80%);
+    color: rgb(43, 43, 43);
+}
+
+@media screen and (max-width: 991px) {
+    .product_view_all {
+        font-size: 17px;
+    }
+
+    .product_section_title {
+        font-size: 17px;
+    }
+}
+
+
+/*======== slider =======*/
+.product_img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.product_card {
+    border-width: 2px 2px 10px 2px;
+    border-color: #008F84 #008F84 #ABFFF8 #008F84;
+    border-radius: 30px;
+}
+
+.product_card_card_body {
+    border-style: solid !important;
+    border-width: 2px 0px 2px 0px;
+    border-color: #008F84;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #0AD8C7;
+}
+
+.all_products_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all_product_heading {
+    font-weight: 600;
+}
+
+.product_plus_icon_container {
+    height: 3rem;
+    width: 3rem;
+    background-color: #DEFFF8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.9s;
+}
+
+.product_title {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.product_plus_icon {
+    font-weight: 800;
+    font-size: 30px;
+    color: #008F84;
+    transition: 0.9s;
+}
+
+.product_plus_icon_container:hover {
+    background-color: #008F84;
+}
+
+.product_plus_icon_container .product_plus_icon:hover {
+    color: #DEFFF8;
+}
+
+.medical_workers_img {
+    width: 80%;
+}
+
+@media screen and (max-width: 770px) {
+    .medical_workers_img {
+        width: 100%;
+    }
+}
+
+.medical_workers_container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workers_section_heading {
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.medical_workers_span {
+    background-color: #A7F6F1;
+}
+
+/*======== blog section =======*/
+.blog_section {
+    background-color: #F3FFFD;
+}
+
+.blod_card_bg_img {
+    background-image: url(static/2_blogs/1_Stay-home.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.blod_card {
+    border: 3px solid #008f84;
+    border-radius: 10px;
+}
+
+.blog_title {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.blog_read_this_btn {
+    background-color: #008f84;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.9s;
+}
+
+.blog_read_this_btn:hover {
+    color: lightgray;
+}
+
+.blog_img {
+    border: 3px solid #008f84;
+    border-radius: 10px;
+}
+
+.second_card_title {
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.second_card_title:hover {
+    color: lightgray;
+}
+
+.blog_seemore_btn {
+    background-color: #008F84;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.9s;
+}
+
+.blog_seemore_btn:hover {
+    color: lightgrey;
+}
+
+
+/*======== footer section =======*/
+footer {
+    background-color: #F3FFFD;
+}
+
+.footer_about_img {
+    width: 50%;
+}
+
+.footer_each_card_title {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.footer_link_container a,
+.about,
+.contact_info {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer_link_container a:hover {
+    color: lightgray;
+}
+
+.developed_by {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.swiper-slide {
+    cursor: pointer;
+}
+
+
+/*======== quick view section =======*/
+.product_quantity input::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;  
+   /*-webkit-appearance:always show;*/
+
+}
+
+
+.quick_view_container{
+    margin-top:150px !important;
+    background-color: #F3FFFD;
+    padding: 85px 0px;
+}
+.product_view_card {
+    border: none
+}
+
+.product {
+    background-color: #eee
+}
+
+.brand {
+    font-size: 13px;
+}
+
+.act-price {
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.dis-price {
+    text-decoration: line-through
+}
+
+.about {
+    font-size: 14px
+}
+
+.color {
+    margin-bottom: 10px
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    padding: 2px 9px;
+    border: 2px solid #ff0000;
+    display: inline-block;
+    color: #ff0000;
+    border-radius: 3px;
+    text-transform: uppercase
+}
+
+label.radio input:checked+span {
+    border-color: #ff0000;
+    background-color: #ff0000;
+    color: #fff
+}
+
+.btn-danger {
+    background-color: #008f84;
+    border-color: #008f84 !important
+}
+
+.btn-danger:hover {
+    background-color: #da0606 !important;
+    border-color: #da0606 !important
+}
+
+.btn-danger:focus {
+    box-shadow: none
+}
+
+.cart i {
+    margin-right: 10px
+}
+
+
+/*======== quick view section =======*/
+.modal_header{
+    background-color: #008f84;
+    color: white;
+    font-weight: 600;
+}
+.modal_close_btn{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.modal_input{
+    font-size: 13px !important;
+}
+.modal_input_label{
+    font-size: 15px;
+}
+.modal_submit_btn{
+    background-color: #008F84;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+    padding: 6px 8px;
+}

@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/icon type" href="static/2_fab-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- external css -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- google jaquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- external js -->
+    <script src="index.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+
+    <title>All Products</title>
+</head>
+
+<body>
+
+
+
+
+    <!--========================= all products section section =========================-->
+    <section class="container-fluid">
+
+        <!--========== navbar ==========-->
+        <nav class="navbar navbar-expand-lg navbar-light p-4 fixed-top" style="background-color: #008f84;">
+            <div class="container-fluid">
+
+                <!-- logo -->
+                <a class="navbar-brand" href="#"><img src="static/0_Logo.png"></a>
+
+
+                <!-- manu -->
+                <button class="manu_btn navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="nav_manu_bar_icon"><i class="bi bi-list"></i></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-1">
+                            <a class="nav-link active lightgray" aria-current="page" href="#">Medicne</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">OTC Drugs</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">Prescription</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">Health</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">Service</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link lightgray" href="#">Contact</a>
+                        </li>
+
+                        <!-- search -->
+                        <li class="nav-item px-2">
+                            <div class="dropdown">
+                                <a class="nav-link lightgray dropbtn" href="#!"><i class="bi bi-search"></i></a>
+                                <div class="dropdown_content">
+                                    <form action="!#" class="d-flex">
+                                        <input type="search" class="search_bar px-2" placeholder="search">
+                                        <a class="nav-link lightgray border search_btn px-2" href="!#">search</a>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <!-- login -->
+                        <li class="nav-item px-3 login_background login_btn_container mt-2 mt-md-2 mt-lg-0">
+                            <a class="nav-link" href="#">Log in</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+        </nav>
+
+        <!--========== body ==========-->
+
+        <div class=" my-5 pt-5">
+
+            <div class="mx-5 my-5">
+                <h4 class="motserrat_font all_product_heading">All Products</h4>
+                <hr>
+            </div>
+
+
+
+            <div class="all_products_container justify-content-center mx-5">
+
+                <!-- 1st -->
+                <div class="card product_card col-6 mx-1 my-2" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                            alt="product image 1">
+                    </div>
+
+                    <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                        <div class="col-8">
+                            <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                            <p class="product_price motserrat_font">$0.9 <small class="product_qty motserrat_font">Per
+                                    Pic</small></p>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class="product_plus_icon_container">
+                                <div><i class="bi bi-plus product_plus_icon"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 2nd -->
+                <div class="card product_card col-6 mx-1 my-2" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                            alt="product image 1">
+                    </div>
+
+                    <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                        <div class="col-8">
+                            <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                            <p class="product_price motserrat_font">$0.9 <small class="product_qty motserrat_font">Per
+                                    Pic</small></p>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class="product_plus_icon_container">
+                                <div><i class="bi bi-plus product_plus_icon"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 3rd -->
+                <div class="card product_card col-6 mx-1 my-2" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                            alt="product image 1">
+                    </div>
+
+                    <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                        <div class="col-8">
+                            <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                            <p class="product_price motserrat_font">$0.9 <small class="product_qty motserrat_font">Per
+                                    Pic</small></p>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class="product_plus_icon_container">
+                                <div><i class="bi bi-plus product_plus_icon"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 4th -->
+                <div class="card product_card col-6 mx-1 my-2" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                            alt="product image 1">
+                    </div>
+
+                    <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                        <div class="col-8">
+                            <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                            <p class="product_price motserrat_font">$0.9 <small class="product_qty motserrat_font">Per
+                                    Pic</small></p>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class="product_plus_icon_container">
+                                <div><i class="bi bi-plus product_plus_icon"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 5th -->
+                <div class="card product_card col-6 mx-1 my-2" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                            alt="product image 1">
+                    </div>
+
+                    <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                        <div class="col-8">
+                            <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                            <p class="product_price motserrat_font">$0.9 <small class="product_qty motserrat_font">Per
+                                    Pic</small></p>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class="product_plus_icon_container">
+                                <div><i class="bi bi-plus product_plus_icon"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 6th -->
+                <div class="card product_card col-6 mx-1 my-2" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                            alt="product image 1">
+                    </div>
+
+                    <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                        <div class="col-8">
+                            <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                            <p class="product_price motserrat_font">$0.9 <small class="product_qty motserrat_font">Per
+                                    Pic</small></p>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class="product_plus_icon_container">
+                                <div><i class="bi bi-plus product_plus_icon"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 7th -->
+                <div class="card product_card col-6 mx-1 my-2" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                            alt="product image 1">
+                    </div>
+
+                    <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                        <div class="col-8">
+                            <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                            <p class="product_price motserrat_font">$0.9 <small class="product_qty motserrat_font">Per
+                                    Pic</small></p>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class="product_plus_icon_container">
+                                <div><i class="bi bi-plus product_plus_icon"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 8th -->
+                <div class="card product_card col-6 mx-1 my-2" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                            alt="product image 1">
+                    </div>
+
+                    <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                        <div class="col-8">
+                            <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                            <p class="product_price motserrat_font">$0.9 <small class="product_qty motserrat_font">Per
+                                    Pic</small></p>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class="product_plus_icon_container">
+                                <div><i class="bi bi-plus product_plus_icon"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 9th -->
+                <div class="card product_card col-6 mx-1 my-2" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                            alt="product image 1">
+                    </div>
+
+                    <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                        <div class="col-8">
+                            <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                            <p class="product_price motserrat_font">$0.9 <small class="product_qty motserrat_font">Per
+                                    Pic</small></p>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class="product_plus_icon_container">
+                                <div><i class="bi bi-plus product_plus_icon"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 10th -->
+                <div class="card product_card col-6 mx-1 my-2" style="width: 18rem;">
+
+                    <div class="d-flex justify-content-center">
+                        <img src="static/1_medicine/3.jpg" class="card-img-top product_img d-block py-3"
+                            alt="product image 1">
+                    </div>
+
+                    <div class="card-body product_card_card_body d-flex pt-4 pb-1">
+
+                        <div class="col-8">
+                            <h5 class="card-title text-start product_title motserrat_font">N-95 Mask</h5>
+                            <p class="product_price motserrat_font">$0.9 <small class="product_qty motserrat_font">Per
+                                    Pic</small></p>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class="product_plus_icon_container">
+                                <div><i class="bi bi-plus product_plus_icon"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- ============ end ============-->
+
+
+
+    <!--========================= footer =========================-->
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+
+                <!-- contact -->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 footer_container">
+                    <img src="static/0.1_footer_logo.png" class="footer_about_img my-5" alt="logo">
+                    <div class="contact_info motserrat_font">
+                        <div>Call: +** ** **</div>
+                        <div>Mail: ***@gmail.com</div>
+                        <div>Location: Dhaka, Bangladesh</div>
+                    </div>
+                </div>
+
+                <!-- categories  -->
+                <div class="col-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2 footer_container">
+                    <h4 class="footer_each_card_title motserrat_font my-5">Main Categories</h4>
+                    <div class="footer_link_container motserrat_font">
+                        <div><a href="#!">Medicine</a></div>
+                        <div><a href="#!">For Corona</a></div>
+                        <div><a href="#!">OTC Drugs</a></div>
+                        <div><a href="#!">Prescription</a></div>
+                        <div><a href="#!">Health</a></div>
+                    </div>
+                </div>
+
+                <!-- About  -->
+                <div class="col-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2 footer_container">
+                    <h4 class="footer_each_card_title motserrat_font my-5">About</h4>
+                    <div class="footer_link_container motserrat_font">
+                        <div><a href="#!">Who we are</a></div>
+                        <div><a href="#!">Terms ofuse</a></div>
+                        <div><a href="#!">Service</a></div>
+                        <div><a href="#!">Privacy Policy</a></div>
+                        <div><a href="#!">Contact</a></div>
+                    </div>
+                </div>
+
+
+
+                <!-- About  -->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 footer_container">
+                    <h4 class="footer_each_card_title motserrat_font my-5">Medicine</h4>
+                    <div class="footer_link_container motserrat_font">
+                        <p class="about">
+                            Subscribe to our newsletter and we will infor you about news directory and promotions
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text-center motserrat_font developed_by">Developed by <b>MOSSADDAK</b></div>
+        </div>
+    </footer>
+    <!-- ============ end ============ -->
+
+
+
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+
+    <!-- drag and drop -->
+    <script src="drag_and_drop.js"></script>
+
+
+    <!-- google jaquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
